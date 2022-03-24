@@ -157,6 +157,17 @@ body{
     color: #6665ee;
 }
 
+.about::after{
+    content: '';
+    position: flex;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+
 .about-description{
     font-size: 25px;
     margin-bottom: 50px;
@@ -167,6 +178,20 @@ body{
     margin-right: 30px;
     width: 400px;
     height: 400px;
+}
+
+.my_picture:hover .move-right{
+    transform: translate(350px,0);
+    -webkit-transform: translate(350px,0); /** Chrome & Safari **/
+    -o-transform: translate(350px,0); /** Opera **/
+    -moz-transform: translate(350px,0); /** Firefox **/
+}
+
+.my_picture{
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
 }
 
 .cargo{
@@ -207,6 +232,17 @@ body{
 .skills{
     font-size: 50px;
     color: #6665ee;
+}
+
+.skills::after{
+    content: '';
+    position: flex;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
 }
 
 .container_skills{
@@ -363,52 +399,20 @@ body{
 }
 
 
+/*Estilos del contenedor de Investigation*/
 
-
-
-
-/*Ayudaaaaaaaaa*/
-
-
-
-
-#l1 {
-    float:left
+.investigation{
+    font-size: 50px;
+    color: #6665ee;
 }
 
-.social-icons li {
-    font-size: 1.2em;
-    padding: 0.5em;
-}
-
-.social-icons #l1 li{
-    display: inline;
-  }
-
-.social-icons #l1{
-    margin-left: 50px;
-    margin-top: 100px;
-}
-
-#flooter div.tooltip{
-    background: #009688;
-    padding: .5em;
-    border-radio: 4;
-    color: white;
-    font: courier;
-    float:left;
-    position: absolute;
-    top: 150px;
-    left: 220px;
-    
-}
-  
-#flooter div.tooltip:before {
-    position:absolute;
-    bottom:34px;
-    content:"";
-    border-bottom: 10px solid #009688;
-    border-top: 10px solid transparent ;
-    border-right: 10px solid transparent ;
-    border-left: 10px solid transparent ;
+.investigation::after{
+    content: '';
+    position: flex;
+    display: block;
+    width: 300px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
 }
