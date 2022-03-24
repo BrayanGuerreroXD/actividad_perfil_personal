@@ -8,25 +8,30 @@ body{
     background: url(assets/background.jfif) no-repeat;
     background-size: cover;
     height: auto;
-}
-
-.title, .subtitle{
-    margin: 20px;
-    color: #FFFF;
+    display: block;
+    position: relative;
+    justify-content: center;
+    text-align: center;
 }
 
 .title{
+    color: #FFFF;
     font-size: 90px;
 }
 
 .subtitle{
-    display: block;
+    color: #FFFF;
+    font-size: 30px;
+    font-style: italic;
+}
+/*
+.container_title .subtitle{
     font-size: 30px;
     font-style: italic;
     white-space: nowrap;
     border-right: 4px solid;
     width: 13ch;
-     
+
     animation: typing 2s steps(13),
     blink .5s infinite step-end alternate;
     
@@ -38,5 +43,56 @@ body{
 }
 
 @keyframes blink {
-    50% { border: transparent;}
+    50% { border-color: transparent;}
+}
+*/
+
+.container_about, .container_skills, .container_investigation{
+    margin: 20px;
+}
+
+.about{
+    font-size: 50px;
+    color: #D55F39;
+}
+
+#l1 {
+    float:left
+}
+
+.social-icons li {
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+
+.social-icons #l1 li{
+    display: inline;
+  }
+
+.social-icons #l1{
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+#flooter div.tooltip{
+    background: #009688;
+    padding: .5em;
+    border-radio: 4;
+    color: white;
+    font: courier;
+    float:left;
+    position: absolute;
+    top: 150px;
+    left: 220px;
+    
+}
+  
+#flooter div.tooltip:before {
+    position:absolute;
+    bottom:34px;
+    content:"";
+    border-bottom: 10px solid #009688;
+    border-top: 10px solid transparent ;
+    border-right: 10px solid transparent ;
+    border-left: 10px solid transparent ;
 }
