@@ -1,6 +1,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
+    min-height: 100vh;
 }
 
 .container_title{
@@ -48,13 +49,87 @@ body{
 */
 
 .container_about, .container_skills, .container_investigation{
-    margin: 20px;
+    margin: 50px;
+    margin-bottom: 100px;
 }
 
 .about{
     font-size: 50px;
     color: #D55F39;
 }
+
+.about-description{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.my_picture{
+    float: left;
+    margin-right: 30px;
+    width: 400px;
+    height: 400px;
+}
+
+.cargo{
+    clear: both;
+    overflow: hidden;
+}
+
+.cargo-title{
+    font-size: 40px;
+    text-align: center;
+    color: #D55F39;
+
+}
+
+.container_about, .container_skills, .container_investigation p{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.datos-personales{
+    font-size: 20px;
+    margin: 20px;
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.datos-personales li::before { 
+    content: "\2022";
+    margin: 6px; 
+    padding-right: 8px; 
+    color: #D55F39;
+    display: inline-block; 
+    padding-right: 10px;
+    font-size: 50px;
+    line-height: 25px;
+    vertical-align: -11px;
+    width: 20px;
+}
+
+.skills{
+    font-size: 50px;
+    color: #D55F39;
+}
+
+
+.alien{
+    float: right;
+    margin-left: 30px;
+    width: 500px;
+    height: 500px;
+}
+
+
+
+
+
+
+/*Ayudaaaaaaaaa*/
+
+
+
 
 #l1 {
     float:left
