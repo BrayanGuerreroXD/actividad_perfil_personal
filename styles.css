@@ -1,4 +1,7 @@
+@import "https://unpkg.com/transition-style";
+
 :root{
+    --text-hero-color: #FFFF;
     --title-color: #6665ee;
     --title-after-color: #149ddd;
 }
@@ -13,6 +16,24 @@ body{
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.transition-item{
+    animation: in-circle-swoop 1s;
+}
+
+@keyframes in-circle-swoop {
+    from {
+      clip-path: var(--circle-top-right-out);
+    }
+    to {
+      clip-path: var(--circle-bottom-right-in);
+    }
+  }
+  
+  [transition-style="in:custom:circle-swoop"] {
+    --transition__duration: 5s;
+    animation-name: in-circle-swoop;
+  }
+
 
 #hero {
     width: 100%;
@@ -46,35 +67,34 @@ body{
     font-size: 90px;
     font-weight: 700;
     line-height: 56px;
-    color: #fff;
+    color: var(--text-hero-color);
 }
 
 #hero p {
-    color: #fff;
+    color: var(--text-hero-color);
     margin-bottom: 50px;
     font-size: 40px;
-}
-
-#hero p span {
-    color: #fff;
+    display: flex;
+    font-style: italic;
+    white-space: nowrap;
     padding-bottom: 4px;
     letter-spacing: 1px;
-    border-bottom: 3px solid #149ddd;
+    border-right: 4px solid;
+    width: 15ch;
+
+    animation: typing 2s steps(10),
+    blink .5s infinite step-end alternate;
+
+    overflow: hidden;
 }
 
-@keyframes in-circle-swoop {
-    from {
-      clip-path: var(--circle-top-right-out);
-    }
-    to {
-      clip-path: var(--circle-bottom-right-in);
-    }
-  }
-  
-  [transition-style="in:custom:circle-swoop"] {
-    --transition__duration: 5s;
-    animation-name: in-circle-swoop;
-  }
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% {border-color: transparent}
+}
 
 .wrapper{
     margin-top: 60px;
