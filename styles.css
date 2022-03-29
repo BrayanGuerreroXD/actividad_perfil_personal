@@ -1,23 +1,6 @@
 :root{
-    --title-color: 
-    --subtitle-color:
-    --text-color:
-
+    --title-color: #6665ee;
 }
-
-@keyframes in-circle-swoop {
-    from {
-      clip-path: var(--circle-top-right-out);
-    }
-    to {
-      clip-path: var(--circle-bottom-right-in);
-    }
-  }
-  
-  [transition-style="in:custom:circle-swoop"] {
-    --transition__duration: 5s;
-    animation-name: in-circle-swoop;
-  }
 
 body{
     font-family: 'Raleway', sans-serif;
@@ -76,6 +59,20 @@ body{
     letter-spacing: 1px;
     border-bottom: 3px solid #149ddd;
 }
+
+@keyframes in-circle-swoop {
+    from {
+      clip-path: var(--circle-top-right-out);
+    }
+    to {
+      clip-path: var(--circle-bottom-right-in);
+    }
+  }
+  
+  [transition-style="in:custom:circle-swoop"] {
+    --transition__duration: 5s;
+    animation-name: in-circle-swoop;
+  }
 
 .wrapper{
     margin-top: 60px;
@@ -289,7 +286,7 @@ section {
 
 .about{
     font-size: 50px;
-    color: #6665ee;
+    color: var(--title-color);
 }
 
 .about::after{
@@ -337,7 +334,7 @@ section {
 .cargo-title{
     font-size: 40px;
     text-align: center;
-    color: #6665ee;
+    color: var(--title-color);
 
 }
 
