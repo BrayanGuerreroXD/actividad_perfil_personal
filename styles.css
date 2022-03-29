@@ -276,6 +276,7 @@ p {
       }
 }
 
+/*
 #transition-item{
     background-color: #333;
     
@@ -298,6 +299,7 @@ p {
     clip-path: circle(150% at top right);
   }
 }
+*/
 
 .cargo{
     clear: both;
