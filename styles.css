@@ -20,7 +20,7 @@ body{
 #hero {
     width: 100%;
     height: 100vh;
-    background: url(assets/hero-bg-2.jpg) top center;
+    background: url(assets/hero-bg.jpg) top center;
     background-size: cover;
 }
 
@@ -237,8 +237,8 @@ body{
 .my_picture{
     float: left;
     margin-right: 30px;
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
 
     animation: img-left-to-right 3s steps(2), 
     infinite step-end alternate;
@@ -279,7 +279,7 @@ body{
 }
 
 .cargo-title{
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     color: var(--title-color);
 
