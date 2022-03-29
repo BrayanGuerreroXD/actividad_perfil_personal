@@ -1,33 +1,77 @@
+:root{
+    --title-color: 
+    --subtitle-color:
+    --text-color:
+
+}
+
+@keyframes in-circle-swoop {
+    from {
+      clip-path: var(--circle-top-right-out);
+    }
+    to {
+      clip-path: var(--circle-bottom-right-in);
+    }
+  }
+  
+  [transition-style="in:custom:circle-swoop"] {
+    --transition__duration: 5s;
+    animation-name: in-circle-swoop;
+  }
+
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
     min-height: 100vh;
 }
 
-/*Estilos del contenedor del titulo de la pagina*/
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
 
-.container_title{
-    overflow: hidden;
-    background: url(assets/background.jfif) top center;
-    background-size: cover;
-    display: block;
-    justify-content: center;
-    text-align: center;
+#hero {
     width: 100%;
     height: 100vh;
+    background: url(assets/background.jfif) top center;
+    background-size: cover;
 }
 
-.title{
-    margin-top: 90px;
-    color: #FFFF;
-    font-size: 150px;
+#hero:before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
-.subtitle{
-    margin-top: -10px;
-    color: #FFFF;
-    font-size: 50px;
-    font-style: italic;
+#hero .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+
+#hero p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 26px;
+}
+
+#hero p span {
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #149ddd;
 }
 
 .wrapper{
@@ -136,6 +180,50 @@ body{
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip:before{
     background: #DE463B;
+}
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+/*Estilos del contenedor del titulo de la pagina*/
+
+.container_title{
+    overflow: hidden;
+    background: url(assets/background.jfif) top center;
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.title{
+    margin-top: 90px;
+    color: #FFFF;
+    font-size: 150px;
+}
+
+.subtitle{
+    margin-top: -10px;
+    color: #FFFF;
+    font-size: 50px;
+    font-style: italic;
 }
 
 
