@@ -270,6 +270,7 @@ p {
     width: 600px;
     height: 600px;
     border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
 
     animation: img-left-to-right 3s;
     overflow: hidden;
@@ -345,6 +346,22 @@ p {
 
 /*Estilos del contenedor de Skills*/
 
+.img-skills{
+    width: 35%;
+    margin-right: 50px;
+    float: right;
+    animation: ilustrationAnimate ease-in 1.5s infinite alternate;
+}
+
+@keyframes ilustrationAnimate{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.06);
+    }
+}
+
 .skills{
     font-size: 50px;
     color: var(--title-color);
@@ -393,6 +410,8 @@ p {
 .skill-bars .bar .info span{
     font-weight: 500;
     font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
     opacity: 0;
     animation: showText 1s 2s linear forwards;
 }
