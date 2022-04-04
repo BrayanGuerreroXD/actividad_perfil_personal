@@ -227,12 +227,11 @@ p {
 #about, #skills, #investigation{
     padding: 25px 0;
     overflow: hidden;
-    margin: 50px;
-    margin-bottom: 25px;
+    margin: 25px 150px 25px 150px;
 }
 
 #about, #skills, #investigation p{
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 25px;
 }
 
@@ -324,52 +323,31 @@ div.arrow-bottom:hover::before {
 
 /*Personal Picture*/
 
-.my_picture{
+#my_picture{
     float: left;
     margin-right: 30px;
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 550px;
     border-radius: 20px;
     box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
-
-    animation: img-left-to-right 3s;
     overflow: hidden;
+    opacity: 0;
+	transform: scale(0.9);
+	transition: .7s ease-in-out all;
 }
 
-@keyframes img-left-to-right {
-    from {
-        opacity: 0%;
-      }
-    
-      to {
-        opacity: 100%;
-      }
+#my_picture.izquierda {
+	transform: translateX(-100px);
 }
 
-/*
-#transition-item{
-    background-color: #333;
-    
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
+#my_picture.derecha {
+	transform: translateX(100px);
 }
 
-#transition-item::after{
-    z-index: 2;
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-top-right both;
-    overflow: hidden;
+#my_picture.visible {
+	opacity: 1;
+	transform: scale(1) translateX(0);
 }
-
-@keyframes circle-in-top-right {
-  from {
-    clip-path: circle(0%);
-  }
-  to {
-    clip-path: circle(150% at top right);
-  }
-}
-*/
 
 .cargo{
     clear: both;
@@ -408,7 +386,7 @@ div.arrow-bottom:hover::before {
 # Skills
 --------------------------------------------------------------*/
 
-.img-skills{
+#img-skills{
     width: 35%;
     margin-right: 50px;
     float: right;
@@ -615,21 +593,21 @@ div.arrow-bottom:hover::before {
     margin-right: 30px;
 }
 
-.ia {
+#ia {
     width: 400px;
     height: 250px;
     margin: 20px;
     border-radius: 20px;
 }
 
-.programming {
+#programming {
     width: 400px;
     height: 250px;
     margin: 20px;
     border-radius: 20px;
 }
 
-.alien{
+#alien{
     width: 300px;
     float: right;
 }
