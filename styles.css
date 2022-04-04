@@ -541,7 +541,7 @@ p {
 
 .tecnologias {
     position: absolute;
-    display: grid;
+    display: inline-block;
     margin-right: 30px;
 }
 
@@ -559,7 +559,16 @@ p {
     border-radius: 20px;
 }
 
+#montain{
+    width: 400px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
 #alien{
-    width: 300px;
-    float: right;
+    width: 400px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 20px;
 }
