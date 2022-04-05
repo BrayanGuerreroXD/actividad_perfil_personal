@@ -541,34 +541,13 @@ p {
 
 .tecnologias {
     position: absolute;
-    display: inline-block;
-    margin-right: 30px;
+    display: flex;
+    justify-content: center;
 }
 
-#ia {
-    width: 400px;
-    height: 250px;
-    margin: 20px;
+.tecnologias img{
+    width: 500px;
+    height: 300px;
     border-radius: 20px;
-}
-
-#programming {
-    width: 400px;
-    height: 250px;
     margin: 20px;
-    border-radius: 20px;
-}
-
-#montain{
-    width: 400px;
-    height: 250px;
-    margin: 20px;
-    border-radius: 20px;
-}
-
-#alien{
-    width: 400px;
-    height: 250px;
-    margin: 20px;
-    border-radius: 20px;
 }
